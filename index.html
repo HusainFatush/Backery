@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bäckerei-Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+</head>
+<body>
+    
+    <!-- header -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-bread-slice"></i> Bäckerei</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Startseite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Über uns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">Produkte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#review">Bewertungen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order">Bestellen</a>
+                    </li>
+                </ul>
+                <div class="icons ms-3">
+                    <div id="cart-btn" class="fas fa-shopping-cart"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    </header>
+
+    <div class="cart-items-container">
+
+        <div id="close-form" class="fas fa-times"></div>
+        <h3 class="title">Kasse</h3>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-1.jpg" alt="">
+            <div class="content">
+                <h3>Bäckerei Artikel 1</h3>
+                <div class="price">45,99 €</div>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-2.jpg" alt="">
+            <div class="content">
+                <h3>Bäckerei Artikel 2</h3>
+                <div class="price">15,99 €</div>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-3.jpg" alt="">
+            <div class="content">
+                <h3>Bäckerei Artikel 3</h3>
+                <div class="price">29,99 €</div>
+            </div>
+        </div>
+
+        <a href="#" class="btn btn-warning btn-lg btn-custom"> Kasse </a>
+
+    </div>
+
+ 
+
+<!-- home -->
+<section class="home" id="home">
+    <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/slider1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Wir backen die Welt zu einem besseren Ort</h3>
+                    <a href="#" class="btn btn-warning btn-lg btn-custom">Loslegen</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/slider2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Wir backen die Welt zu einem besseren Ort</h3>
+                    <a href="#" class="btn btn-warning btn-lg btn-custom">Loslegen</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Zurück</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Weiter</span>
+        </button>
+    </div>
+</section>
+    <!-- about us -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>Über</span> uns </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/about.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Frische Backwaren mit <span>Liebe und Tradition</span></h3>
+                <p>Wir sind stolz darauf, die frischesten und köstlichsten Backwaren in der Stadt anzubieten. Unsere Bäckerei verwendet nur die besten Zutaten, um sicherzustellen, dass jedes Produkt von höchster Qualität ist.</p>
+                <p>Unsere Leidenschaft für das Backen zeigt sich in jedem Bissen. Wir bieten eine Vielzahl von Produkten an, darunter Brot, Kuchen, Gebäck und vieles mehr, die alle mit Liebe und Sorgfalt zubereitet werden.</p>
+                <a href="#" style="width: 50%; height: 60px; font-size: 3rem;" class="btn btn-warning btn-lg btn-custom">Mehr lesen</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- product -->
+
+    <section class="product" id="product">
+
+        <h1 class="heading">Unsere <span>Produkte</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Erdbeerekuchen</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">15,99 €</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Himbeerekuchen</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">18,99 €</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Honigbrot</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="price">11,99 €</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Erdbeerekuchen</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">15,99 €</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Waffel</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="price">27,99 €</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Erdbeere und Honigbrot</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">25,99 €</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- gallery -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading">Unsere <span>Galerie</span></h1>
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-box" onclick="openImage('./images/gallery1.jpg')">
+                            <img class="img-fluid" src="./images/gallery1.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-box" onclick="openImage('./images/gallery2.jpg')">
+                            <img class="img-fluid" src="./images/gallery2.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-box" onclick="openImage('./images/gallery3.jpg')">
+                            <img class="img-fluid" src="./images/gallery3.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-box" onclick="openImage('./images/gallery4.jpg')">
+                            <img class="img-fluid" src="./images/gallery4.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-box" onclick="openImage('./images/gallery5.jpg')">
+                            <img class="img-fluid" src="./images/gallery5.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-box" onclick="openImage('./images/gallery6.jpg')">
+                            <img class="img-fluid" src="./images/gallery6.jpg" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+
+    <section class="promotion">
+
+        <h1 class="heading">Wöchentliche <span>Aktionen</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="content">
+                    <h3>Schokoladenkuchen</h3>
+                    <p>Unsere Schokoladenkuchen sind ein Traum für Schokoladenliebhaber. Mit reichhaltiger Schokolade und einer cremigen Füllung sind sie perfekt für jeden Anlass.</p>
+                </div>
+
+                <img src="images/promotion1.png" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/promotion2.png" alt="">
+                <div class="content">
+                    <h3>Nusskuchen</h3>
+                    <p>Der Nusskuchen ist ein weiterer Favorit, der mit einer Mischung aus verschiedenen Nüssen und einer zarten Teigbasis zubereitet wird. Ideal für einen Snack oder als Dessert nach dem Essen.</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- team -->
+
+    <section class="page-section bg-light" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase" style="font-size: 6rem;">Unsere Team</h2>
+                <h3 class="section-subheading text-muted" style="font-size: 2rem;">Lernen Sie unser Team kennen, das mit Leidenschaft und Hingabe für Sie backt.</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="./images/team-1.png" alt="..." />
+                        <h4>Lisa Stein</h4>
+                        <p class="text-muted">Chefin</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="./images/team-2.png" alt="..." />
+                        <h4>Edward King</h4>
+                        <p class="text-muted">Bäcker</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="./images/team-3.png" alt="..." />
+                        <h4>Peter Hann</h4>
+                        <p class="text-muted">Bäcker</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Unser Team besteht aus talentierten und engagierten Fachleuten, die mit Leidenschaft und Hingabe arbeiten, um Ihnen die besten Backwaren zu bieten. Jeder von uns bringt einzigartige Fähigkeiten und Erfahrungen mit, um sicherzustellen, dass unsere Produkte von höchster Qualität sind.</p></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="parallax">
+
+        <h1 class="heading">Sortiment von <span>Produkten</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/parallax-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Brot</h3>
+                    <p>Unsere Bäckerei bietet eine breite Palette an frisch gebackenem Brot, das täglich aus hochwertigen Zutaten hergestellt wird. Jedes Brot wird mit Sorgfalt und Liebe zum Detail gebacken, um den besten Geschmack zu gewährleisten.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/parallax-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Kuchen</h3>
+                    <p>Unsere Kuchen sind nicht nur köstlich, sondern auch ein Fest für die Augen. Wir bieten eine Vielzahl von Geschmacksrichtungen an, darunter Schokolade, Vanille und Früchte, die alle mit frischen Zutaten zubereitet werden.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/parallax-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Donuts</h3>
+                    <p>Unsere Donuts sind ein beliebter Snack, der mit verschiedenen Toppings und Füllungen erhältlich ist. Sie sind perfekt für einen süßen Genuss zwischendurch oder als Dessert nach dem Essen.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="review" id="review">
+
+        <h1 class="heading">Kunden <span>Bewertungen</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/1.jpg" class="user" alt="">
+                <h3>Parveen Anand</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>„Ich liebe die frischen Brötchen und das Brot aus dieser Bäckerei! Es hat immer den perfekten Geschmack und die richtige Konsistenz. Die Auswahl ist großartig und die Qualität ist unübertroffen.“</p>
+            </div>
+
+            <div class="box">
+                <img src="images/2.jpg" class="user" alt="">
+                <h3>Diana Petersen</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>„Die Kuchen sind einfach himmlisch! Ich habe den Schokoladenkuchen probiert und er war so saftig und schokoladig. Definitiv ein Muss für jeden, der Süßes liebt!“</p>
+            </div>
+
+            <div class="box">
+                <img src="images/3.jpg" class="user" alt="">
+                <h3>Larry Parker</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>„Die Donuts sind ein echter Hit! Sie sind immer frisch und die verschiedenen Geschmacksrichtungen sind einfach köstlich. Ich kann nicht widerstehen, wenn ich vorbeigehe!“</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="order" id="order">
+
+        <h1 class="heading"><span>Jetzt</span> bestellen </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/order.gif" alt="">
+            </div>
+
+            <form action="">
+
+                <div class="inputBox">
+                    <input type="text" placeholder="Vorname">
+                    <input type="text" placeholder="Nachname">
+                </div>
+
+                <div class="inputBox">
+                    <input type="email" placeholder="E-Mail-Adresse">
+                    <input type="number" placeholder="Telefonnummer">
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" placeholder="Lebensmittelname">
+                    <input type="number" placeholder="Wie viel?">
+                </div>
+
+                <textarea placeholder="Ihre Adresse" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Jetzt bestellen" style="width: 20%; height: 60px; font-size: 2rem;" class="btn btn-warning btn-lg btn-custom">
+            </form>
+
+        </div>
+
+    </section>
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Adresse</h3>
+                <p>Kirchfeldstraße 94-96, 40215 Düsseldorf</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>E-Mail</h3>
+                <a href="#" class="link">huschafi@leo-statz-berufskolleg.de</a>
+            </div>
+            
+            
+
+            <div class="box">
+                <h3>Öffnungszeiten</h3>
+                <p>Montag - Freitag: 9:00 - 21:00 <br> Samstag: 8:00 - 20:00 </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
